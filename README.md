@@ -35,3 +35,7 @@ created by @[sulmanweb](https://sulmanweb.com)
     docker compose run web rails console
     ```
 ---
+
+## License
+
+**[MIT](/license)**
