@@ -38,4 +38,4 @@ created by @[sulmanweb](https://sulmanweb.com)
 
 ## License
 
-**[MIT](./license)**
+**[MIT](license)**
