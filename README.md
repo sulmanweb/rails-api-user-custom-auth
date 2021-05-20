@@ -49,6 +49,16 @@ created by @[sulmanweb](https://sulmanweb.com)
 }
 ```
 
+**Destroy Self User**
+
+`DELETE` [http://localhost:3000/auth/destroy](http://localhost:3000/auth/destroy)
+`headers`
+
+```
+Authorization: Bearer xxxxxxxxx
+```
+Empty Body
+
 ---
 ## License
 

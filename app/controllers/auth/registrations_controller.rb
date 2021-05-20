@@ -1,5 +1,6 @@
 class Auth::RegistrationsController < ApplicationController
   include CreateSession
+  before_action :authenticate_user, only: :destroy
 
   def create
     @user = User.new(registration_params)
@@ -17,11 +18,20 @@ class Auth::RegistrationsController < ApplicationController
     end
   end
 
+  def destroy
+    current_user.destroy
+    success_user_destroy
+  end
+
   protected
 
   def success_user_created
     response.headers['Authorization'] = "Bearer #{@token}"
     render status: :created, template: "auth/auth"
+  end
+
+  def success_user_destroy
+    render status: :no_content, json: {}
   end
 
   def error_token_create
