@@ -35,3 +35,7 @@ en:
       user:
         format_email: "is not valid. Please provide valid email to continue."
         format_password: "is not valid. Password must be 8 to 72 characters long."
+
+    controllers:
+      auth:
+        token_not_created: "There was some error creating auth token. Please try again."

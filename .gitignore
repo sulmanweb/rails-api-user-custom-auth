@@ -207,3 +207,5 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/ruby,rails,visualstudiocode,macos,linux,windows
+# Ignore application configuration
+# /config/application.yml

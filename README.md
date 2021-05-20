@@ -36,6 +36,20 @@ created by @[sulmanweb](https://sulmanweb.com)
     ```
 ---
 
+## Services
+
+**Sign Up**
+
+`POST` [http://localhost:3000/auth/sign_up](http://localhost:3000/auth/sign_up)
+```json
+{
+    "email": "hello@hello.com",
+    "password": "abcd@1234",
+    "name": "Hello World"
+}
+```
+
+---
 ## License
 
 **MIT**
