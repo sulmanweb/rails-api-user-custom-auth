@@ -90,6 +90,27 @@ Authorization: Bearer xxxxxxxxx
 Authorization: Bearer xxxxxxxxx
 ```
 
+**Confirm Email**
+
+`GET` [http://localhost:3000/auth/confirm_email](http://localhost:3000/auth/confirm_email)
+
+`query params`
+
+```
+token: xxxxxxxxx
+```
+
+**Resend Confirmation Email**
+
+`PUT` [http://localhost:3000/auth/resend_confirm_email](http://localhost:3000/auth/resend_confirm_email)
+
+`headers`
+
+```
+Authorization: Bearer xxxxxxxxx
+```
+Empty Body
+
 ---
 ## License
 
