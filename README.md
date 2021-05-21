@@ -52,12 +52,43 @@ created by @[sulmanweb](https://sulmanweb.com)
 **Destroy Self User**
 
 `DELETE` [http://localhost:3000/auth/destroy](http://localhost:3000/auth/destroy)
+
 `headers`
 
 ```
 Authorization: Bearer xxxxxxxxx
 ```
 Empty Body
+
+**Sign In**
+
+`POST` [http://localhost:3000/auth/sign_in](http://localhost:3000/auth/sign_in)
+```json
+{
+    "email": "hello@hello.com",
+    "password": "abcd@1234"
+}
+```
+
+**Validate Token**
+
+`GET` [http://localhost:3000/auth/validate_token](http://localhost:3000/auth/validate_token)
+
+`headers`
+
+```
+Authorization: Bearer xxxxxxxxx
+```
+
+**Sign Out**
+
+`DELETE` [http://localhost:3000/auth/sign_out](http://localhost:3000/auth/sign_out)
+
+`headers`
+
+```
+Authorization: Bearer xxxxxxxxx
+```
 
 ---
 ## License
