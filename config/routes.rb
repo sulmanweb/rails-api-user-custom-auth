@@ -6,5 +6,7 @@ Rails.application.routes.draw do
     post "sign_in", to: "sessions#create"
     get "validate_token", to: "sessions#validate_token"
     delete "sign_out", to: "sessions#destroy"
+    get "confirm_email", to: "confirmations#confirm_email"
+    put "resend_confirm_email", to: "confirmations#resend_confirm_email"
   end
 end
