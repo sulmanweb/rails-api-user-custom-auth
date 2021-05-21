@@ -111,6 +111,48 @@ Authorization: Bearer xxxxxxxxx
 ```
 Empty Body
 
+**Forgot Password Request**
+
+`POST` [http://localhost:3000/auth/forgot_password_email](http://localhost:3000/auth/forgot_password_email)
+
+```json
+{
+    "email": "hello@world.com"
+}
+```
+
+**Verify Forgot Password Token Received In Email**
+
+`GET` [http://localhost:3000/auth/verify_reset_password_email](http://localhost:3000/auth/verify_reset_password_email)
+
+`query params`
+
+```
+token: xxxxxxxxx
+```
+
+**Change Password For Logged In User**
+
+`PUT` [http://localhost:3000/auth/reset_password](http://localhost:3000/auth/reset_password)
+
+`headers`
+
+```
+Authorization: Bearer xxxxxxxxx
+```
+
+OR `query params`
+
+```
+token: xxxxxxxxx
+```
+
+```json
+{
+    "password": "abcd@1234",
+    "confirm_password": "abcd@1234"
+}
+```
 ---
 ## License
 
