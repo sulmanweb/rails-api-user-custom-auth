@@ -11,7 +11,7 @@ class UserVerification < ApplicationRecord
   before_validation :generate_token, on: :create
 
   def self.search status='pending', verify_type='confirm_email', token
-    UserVerification.kept.where(status: status, verify_type: verify_type).find_by(token: token)
+    UserVerification.where(status: status, verify_type: verify_type).find_by(token: token)
   end
 
   def generate_token

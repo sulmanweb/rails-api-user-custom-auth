@@ -30,6 +30,11 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
+  messages:
+    resend_confirm_email: "An email is on its way with instructions to confirm your account."
+    reset_password_email_sent: "An email is on its way with instructions to reset your password."
+    email_reset_success: "Your password has been changed successfully."
+
   errors:
     models:
       user:
@@ -37,6 +42,12 @@ en:
         format_password: "is not valid. Password must be 8 to 72 characters long."
 
     controllers:
+      insufficient_params: "All required parameters are not provided to perform this action."
       auth:
         token_not_created: "There was some error creating auth token. Please try again."
         unauthenticated: "You need to be signed into app to perform this action."
+        invalid_credentials: "Email/Password is not correct. Please try again."
+        password_mismatch: "Password and Confirm Password don't match. Please try again."
+      verifications:
+        late: "This token is expired. Please try again later."
+        invalid_token: "This token is invalid. Please try again."
